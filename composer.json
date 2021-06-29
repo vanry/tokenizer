@@ -1,0 +1,36 @@
+{
+    "name": "vanry/tokenizer",
+    "description": "支持 scws, phpanalysis 和 jieba 的中文分词器",
+    "keywords": ["tokenizer"],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vanry",
+            "email": "ivanry@163.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0|^8.0"
+    },
+    "require-dev": {
+        "ext-scws": "*",
+        "fukuball/jieba-php": "^0.33",
+        "lmz/phpanalysis": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Vanry\\Tokenizer\\": "src"
+        }
+    },
+    "suggest": {
+        "ext-scws": "Required to use the SCWS tokenizer (*).",
+        "fukuball/jieba-php": "Required to use the Jieba tokenizer (^0.3).",
+        "lmz/phpanalysis": "Required to use the Phpanalysis tokenizer (^1.0)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
